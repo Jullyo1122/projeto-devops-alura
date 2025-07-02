@@ -1,0 +1,10 @@
+services:
+  # Serviço da dua aplicação FastAPI
+  api:
+    build: . #Constrói a imagem a partir do Dockerfile na raiz do projeto
+    container_name: api # Nome do container
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    
